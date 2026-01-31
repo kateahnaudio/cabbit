@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>cabbit</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="nav">
+      <div class="brand">
+        <div class="name">cabbit</div>
+        <div class="tag">Math • English • Finance • U.S. Study</div>
+      </div>
+      <nav class="navlinks">
+        <a class="active" href="./index.html">Home</a>
+        <a href="./math.html">Math</a>
+        <a href="./english.html">English</a>
+        <a href="./finance.html">Finance</a>
+        <a href="./studyusa.html">Study in the U.S.</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Learning, made simple.</h1>
+      <p>
+        cabbit is an education hub for elementary math, English practice with native speakers,
+        finance learning (via Upvaloo), and guidance for studying in the United States.
+      </p>
+    </section>
+
+    <section class="grid">
+      <a class="card" href="./math.html">
+        <h2>Elementary Math</h2>
+        <p>Interactive math practice (MVP first, then gamified learning and progress tracking).</p>
+        <span class="badge">Core program</span>
+      </a>
+
+      <a class="card" href="./english.html">
+        <h2>English with Native Speakers</h2>
+        <p>Connect students with native English speakers for online conversation practice.</p>
+        <span class="badge">Start manual → automate later</span>
+      </a>
+
+      <a class="card" href="./finance.html">
+        <h2>Finance Learning</h2>
+        <p>Finance education and tools, redirected to Upvaloo.ai.</p>
+        <span class="badge">Redirect</span>
+      </a>
+
+      <a class="card" href="./studyusa.html">
+        <h2>Study in the U.S.</h2>
+        <p>College & graduate school preparation: planning, applications, and strategy.</p>
+        <span class="badge">Consulting + content</span>
+      </a>
+    </section>
+
+    <div class="footer">
+      © <span id="y"></span> cabbit • Built on Netlify + GitHub
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
